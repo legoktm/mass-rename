@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/data/project/legobot/python/bin/python
 """
 Copyright (C) 2013 Legoktm
 
@@ -62,7 +62,7 @@ def TUSC(username, password, lang, project):
               'project': project,
               'password': password,
               }
-    url = 'http://toolserver.org/~magnus/tusc.php'
+    url = 'http://tools-webproxy/tusc/tusc.php'
     r = requests.post(url, params, headers=headers)
     try:
         if int(r.text) == 1:
